@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StackTest {
     private MyStack stack;
@@ -8,7 +9,6 @@ public class StackTest {
     public void setUp(){
         stack = new MyStack();
     }
-
     @Test
     public void testStackIsEmpty(){
         assertTrue(stack.isEmpty());
