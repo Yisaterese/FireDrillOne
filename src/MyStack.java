@@ -22,4 +22,8 @@ public void pop(){
     public int getSize(){
         return numberOfElements;
     }
+
+    public int search(){
+
+    }
 }

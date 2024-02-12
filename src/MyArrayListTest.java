@@ -29,8 +29,11 @@ public class MyArrayListTest {
         assertFalse(arrayList.getIsEmpty());
         arrayList.add(2);
         arrayList.add(1);
-        arrayList.remove();
+        arrayList.remove(2);
         assertEquals(1,arrayList.length());
     }
+
+
+
 
 }

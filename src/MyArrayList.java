@@ -1,35 +1,44 @@
 public class MyArrayList {
     private boolean isEmpty;
-    private final int[] array = new int[10];
+    public  int[] array = new int[10];
     private int numberOfElements;
 
-    int[] newArray = new int[array.length];
     public boolean getIsEmpty(){
         isEmpty = false;
        return isEmpty;
     }
-    public void add(int number){
-        for(int index = 0; index < array.length; index++ ){
-            newArray[index] = number;
-        }
-        if(numberOfElements == array.length){
-            int[] doubleArrayLength = new int[newArray.length*2];
-            for(int index = 0; index < newArray.length; index++ ){
-                doubleArrayLength[index] = newArray[index];
-            }
-            newArray[numberOfElements] = number;
+
+    public void add(int number) {
+        extendLength();
+            array[numberOfElements] = number;
             numberOfElements++;
+    }
+    private void extendLength(){
+            if (numberOfElements == array.length) {
+                int[] doubleArrayLength = new int[array.length * 2];
+                for (int index = 0; index < array.length; index++) {
+                    doubleArrayLength[index] = array[index];
+                }
+               array = doubleArrayLength;
+            }
         }
 
-    }
-    public void remove(){
-       int[] copyArray = new int[array.length-1];
+    public void remove(int num){
+       int[] copyArray = new int[array.length];
        for(int index = 0; index < copyArray.length; index++){
-           copyArray[index] = newArray[index];
+           copyArray[index] = array[index];
+           if(copyArray[index] == num){
+                continue;
+           }
        }
+        array = copyArray;
+        numberOfElements--;
 
     }
-    public int length(){
+
+
+    public int length () {
         return numberOfElements;
     }
-}
+
+    }
