@@ -14,7 +14,6 @@ public void push(int element){
     public void pop(){
         numberOfElements--;
     }
-
     public int getSize(){
         return numberOfElements;
     }
