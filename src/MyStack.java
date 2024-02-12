@@ -25,7 +25,7 @@ public void push(int element){
     public int search(int number){
         int counter = 0;
         for(int index = 0; index < array.length; index++){
-            if(array[counter++] == number){
+            if(array[counter++] == number) {
                 return counter;
             }
         }
@@ -33,7 +33,10 @@ public void push(int element){
     }
 
     public int peek(){
-
+       /* if(numberOfElements == 0){
+            throw new EmptyStackException();
+        }*/
+       return array[numberOfElements-1];
     }
 
 }

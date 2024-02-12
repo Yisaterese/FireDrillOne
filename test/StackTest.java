@@ -55,8 +55,9 @@ public class StackTest {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-        stack.push(5);
-        assertEquals(1,stack.peek());
+        stack.push(7);
+        assertEquals(5,stack.getSize());
+        assertEquals(7,stack.peek());
 
     }
 }
