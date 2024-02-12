@@ -2,7 +2,6 @@ public class MyStack {
 private boolean isEmpty= true;
 private final int[] array = new int[10];
 private int numberOfElements;
-
 public boolean isEmpty() {
     return true;
 }
