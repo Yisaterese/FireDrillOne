@@ -38,9 +38,25 @@ public class StackTest {
         stack.push(3);
         assertEquals(3,stack.getSize());
         stack.pop();
-        assertEquals(2,stack.getSize());
+        stack.pop();
+        stack.pop();
+        assertEquals(0,stack.getSize());
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
         stack.push(4);
         stack.push(5);
-        assertEquals(4,stack.search());
+        assertEquals(4,stack.search(4));
+    }
+
+    @Test
+    public void testCanPeek(){
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        assertEquals(1,stack.peek());
+
     }
 }

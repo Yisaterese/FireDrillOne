@@ -2,20 +2,19 @@ public class MyStack {
 private boolean isEmpty= true;
 private final int[] array = new int[10];
 private int numberOfElements;
-    int[] newArray = new int[array.length];
 
 public boolean isEmpty() {
     return true;
 }
 
 public void push(int element){
-    for(int index = 0; index < array.length; index++){
-        newArray[index] = element;
-    }
+
+    array[numberOfElements] = element;
     numberOfElements++;
 }
 
-public void pop(){
+    public void pop(){
+
         numberOfElements--;
     }
 
@@ -23,7 +22,18 @@ public void pop(){
         return numberOfElements;
     }
 
-    public int search(){
+    public int search(int number){
+        int counter = 0;
+        for(int index = 0; index < array.length; index++){
+            if(array[counter++] == number){
+                return counter;
+            }
+        }
+        return -1;
+    }
+
+    public int peek(){
 
     }
+
 }
