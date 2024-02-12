@@ -12,7 +12,6 @@ public void push(int element){
     array[numberOfElements] = element;
     numberOfElements++;
 }
-
     public void pop(){
 
         numberOfElements--;
