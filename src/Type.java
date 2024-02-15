@@ -3,5 +3,5 @@ enum Type{
     SPIRITUAL,
     EDUCATION,
     BUSINESS,
-    TECHNICAL;
+    TECHNICAL
 }
