@@ -5,7 +5,8 @@ public class IntArrayOfZerosTest {
     @Test
     public void fillArrayWithZeros(){
         int[] myArray = new int[10];
-      //  int[] method =
-        //assertArrayEquals();
+        int[] method = IntArrayOfZeros.arrayOfZeros(myArray);
+        int[] expected = {0,0,0,0,0,0,0,0,0,0};
+        assertArrayEquals(expected, method);
     }
 }
