@@ -2,7 +2,6 @@ import java.util.ArrayList;
 public class Person {
   private ArrayList<Problem> problems = new ArrayList<>();
 
-
   public void addProblems(Problem pro1){
     problems.add(pro1);
   }
