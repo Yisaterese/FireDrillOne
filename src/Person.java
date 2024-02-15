@@ -9,7 +9,6 @@ public class Person {
   public ArrayList recountedProblems() {
     return problems;
   }
-
   public void solvedProblems(Problem pro1){
     for(int index = 0; index < problems.size(); index++){
       if(problems.get(index).equals(pro1)){
