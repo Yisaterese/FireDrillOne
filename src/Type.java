@@ -1,0 +1,7 @@
+enum Type{
+    FINANCIAL,
+    SPIRITUAL,
+    EDUCATION,
+    BUSINESS,
+    TECHNICAL;
+}
