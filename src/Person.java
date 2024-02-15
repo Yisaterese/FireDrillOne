@@ -13,7 +13,6 @@ public class Person {
       if(problems.get(index).equals(pro1)){
          problems.remove(pro1);
       }
-
     }
 
     }

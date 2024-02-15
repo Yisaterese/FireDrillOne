@@ -22,7 +22,6 @@ public class PersonTest {
         simon.solvedProblems(prob3);
         assertEquals(2, simon.recountedProblems().size());
     }
-
     @Test
     public void TestTheProblemPersonWantToSolveExist() {
         Person simon = new Person();
